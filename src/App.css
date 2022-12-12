@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-background: #08021a;
+  --secondary-background: #11082e;
+  --tertiary-background: #0e0724;
+  --quadratric-background: #0a0227;
+  --mobilenav-background: #6a57a8d8;
+  --primary-color: #fff;
+  --secondary-color: #d5d5d5;
+  --tertiary-color: #b0b0b0;
+  --quadratric-color: #312651;
+  --link: #15044d;
+  --link-hover-focus: #190656;
+}
+
+.lightTheme {
+  --primary-background: #f4f4f4;
+  --secondary-background: #eaeaea;
+  --tertiary-background: #d5d5d5;
+  --quadratric-background: #c4c4c4;
+  --mobilenav-background: #d6d6d6d8;
+  --primary-color: #454545;
+  --secondary-color: #676767;
+  --tertiary-color: #888888;
+  --quadratric-color: #9b9b9b;
+  --link: #dddddd;
+  --link-hover-focus: #cccccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  transition-property: background;
+  transition-delay: 0ms;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  color: var(--primary-color);
+}
+
+a:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--primary-background);
+}
+
+::-webkit-scrollbar {
+  background-color: var(--secondary-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--tertiary-background);
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 3%;
+  align-items: center;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav .hamburger {
+  color: var(--primary-color);
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.title {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  margin: 1em;
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 18px;
+  transition: border-bottom 500ms ease-in-out;
+}
+
+.link:focus {
+  border-bottom: var(--secondary-color) 2px solid;
+}
+
+.link:hover {
+  border-bottom: var(--secondary-color) 2px solid;
+}
+
+.icon {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+@media (width <= 650px) {
+  .mobile-nav {
+    display: flex;
+  }
+
+  .mobile-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 7%;
+    right: 0;
+    width: 100%;
+    padding: 5% 0;
+    background-color: var(--mobilenav-background);
+    box-shadow: 0 0 0 100vmax var(--mobilenav-background);
+  }
+
+  .link-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-items * {
+    margin: 5px;
+  }
+
+  .link {
+    padding: 10%;
+  }
+
+  .responsive {
+    display: none;
+  }
+}
