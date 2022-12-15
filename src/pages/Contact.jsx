@@ -1,13 +1,15 @@
 import { useState } from "react";
 
+import "../App.css";
+
 function Contact() {
   const [email, setEmail] = useState("");
   const [content, setContent] = useState("");
 
   return (
     <>
-      <h1 className="text-center text-3xl font-bold">Signup</h1>
-      <h3 className="text-center">support@exla.net</h3>
+      <h1 className="text-center text-3xl font-bold">Contact</h1>
+      <h3 className="text-center">support@rev.com</h3>
       <form>
         <div className="input-group">
           <label htmlFor="email">Email</label>

@@ -1,31 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 :root {
-  --primary-background: #f4f4f4;
-  --secondary-background: #eaeaea;
-  --tertiary-background: #d5d5d5;
-  --quadratric-background: #c4c4c4;
-  --mobilenav-background: #d6d6d6d8;
-  --primary-color: #454545;
-  --secondary-color: #676767;
-  --tertiary-color: #888888;
-  --quadratric-color: #9b9b9b;
-  --link: #dddddd;
-  --link-hover-focus: #cccccc;
-}
-
-.darkTheme {
   --primary-background: #08021a;
   --secondary-background: #11082e;
   --tertiary-background: #0e0724;
   --quadratric-background: #0a0227;
   --mobilenav-background: #6a57a8d8;
-  --primary-color: #fff;
-  --secondary-color: #d5d5d5;
-  --tertiary-color: #b0b0b0;
-  --quadratric-color: #312651;
+  --primary-color: #f4f4f4;
+  --secondary-color: #eaeaea;
+  --tertiary-color: #d5d5d5;
+  --quadratric-color: #c4c4c4;
   --link: #15044d;
   --link-hover-focus: #190656;
+}
+
+.lightTheme {
+  --primary-background: #f4f4f4;
+  --secondary-background: #eaeaea;
+  --tertiary-background: #d5d5d5;
+  --quadratric-background: #c4c4c4;
+  --mobilenav-background: #d6d6d6d8;
+  --primary-color: #08021a;
+  --secondary-color: #11082e;
+  --tertiary-color: #0e0724;
+  --quadratric-color: #c4c4c4;
+  --link: #dddddd;
+  --link-hover-focus: #cccccc;
 }
 
 * {
@@ -154,23 +154,7 @@ nav {
   }
 }
 
-/* Signup */
-body,
-html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
-* {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
-
+/* Forms */
 h1 {
   margin: 30px 0;
   text-align: center;
@@ -201,7 +185,6 @@ form {
 }
 
 .input-group input,
-.input-group select,
 .input-group textarea {
   margin: 7px 0;
   width: 100%;
@@ -244,7 +227,7 @@ button[type="submit"]:active {
 }
 
 .input-group textarea {
-  width: 499px;
+  width: 100%;
   height: 161px;
   resize: none;
 }

@@ -8,7 +8,7 @@ import "../App.css";
 function Navbar() {
   const [open, setOpen] = useState(false);
   const themeSwitcher = () => {
-    document.body.classList.toggle("darkTheme");
+    document.body.classList.toggle("lightTheme");
     if (typeof window !== "undefined") {
       const theme = window.localStorage.getItem("KDV_THEME");
       window.localStorage.setItem(

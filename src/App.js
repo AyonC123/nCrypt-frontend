@@ -16,9 +16,9 @@ function App() {
   const theme = window.localStorage.getItem("KDV_THEME");
 
   if (theme === "light") {
-    document.body.classList.add("darkTheme");
+    document.body.classList.add("lightTheme");
   } else {
-    document.body.classList.remove("darkTheme");
+    document.body.classList.remove("lightTheme");
   }
 
   return (
