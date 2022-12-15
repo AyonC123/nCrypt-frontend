@@ -16,6 +16,7 @@ function Signup() {
       "https://syntax-hackathon.darsh-sikkasikk.repl.co/auth/signup",
       { username, email, password }
     );
+    console.log(resp);
     setError(resp.error);
     setErrmsg(resp.message);
   };

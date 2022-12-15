@@ -236,3 +236,24 @@ button[type="submit"]:active {
   display: flex;
   justify-content: center;
 }
+
+/* Cards */
+.cards {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2.5% 5%;
+}
+
+.card {
+  background-color: var(--tertiary-background);
+  border-radius: 16px;
+  flex-direction: column;
+  flex-basis: 25%;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  margin: 2.5%;
+}
