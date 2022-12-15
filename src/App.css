@@ -116,6 +116,18 @@ nav {
   cursor: pointer;
 }
 
+/* HOME */
+.intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10%;
+}
+
+.intro * {
+  padding-inline: 2.5%;
+}
+
 @media (width <= 650px) {
   .mobile-nav {
     display: flex;
@@ -256,4 +268,13 @@ button[type="submit"]:active {
   display: flex;
   align-items: center;
   margin: 2.5%;
+}
+
+.showcase-card {
+  background-color: var(--tertiary-background);
+  border-radius: 16px;
+}
+
+img {
+  border-radius: 10px;
 }
