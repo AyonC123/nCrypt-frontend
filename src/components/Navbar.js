@@ -8,7 +8,7 @@ import "../App.css";
 function Navbar() {
   const [open, setOpen] = useState(false);
   const themeSwitcher = () => {
-    document.body.classList.toggle("lightTheme");
+    document.body.classList.toggle("darkTheme");
     if (typeof window !== "undefined") {
       const theme = window.localStorage.getItem("KDV_THEME");
       window.localStorage.setItem(
@@ -20,7 +20,7 @@ function Navbar() {
   return (
     <nav>
       <Link to="/">
-        <div className="title">Nuxe</div>
+        <div className="title">Elxa</div>
       </Link>
       <div className="links responsive">
         <Link to="/products" className="link">

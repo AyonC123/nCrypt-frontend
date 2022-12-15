@@ -1,20 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 :root {
-  --primary-background: #08021a;
-  --secondary-background: #11082e;
-  --tertiary-background: #0e0724;
-  --quadratric-background: #0a0227;
-  --mobilenav-background: #6a57a8d8;
-  --primary-color: #fff;
-  --secondary-color: #d5d5d5;
-  --tertiary-color: #b0b0b0;
-  --quadratric-color: #312651;
-  --link: #15044d;
-  --link-hover-focus: #190656;
-}
-
-.lightTheme {
   --primary-background: #f4f4f4;
   --secondary-background: #eaeaea;
   --tertiary-background: #d5d5d5;
@@ -26,6 +12,20 @@
   --quadratric-color: #9b9b9b;
   --link: #dddddd;
   --link-hover-focus: #cccccc;
+}
+
+.darkTheme {
+  --primary-background: #08021a;
+  --secondary-background: #11082e;
+  --tertiary-background: #0e0724;
+  --quadratric-background: #0a0227;
+  --mobilenav-background: #6a57a8d8;
+  --primary-color: #fff;
+  --secondary-color: #d5d5d5;
+  --tertiary-color: #b0b0b0;
+  --quadratric-color: #312651;
+  --link: #15044d;
+  --link-hover-focus: #190656;
 }
 
 * {
