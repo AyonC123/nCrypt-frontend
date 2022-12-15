@@ -20,7 +20,7 @@ function Navbar() {
   return (
     <nav>
       <Link to="/">
-        <div className="title">Exla</div>
+        <div className="title">Rev</div>
       </Link>
       <div className="links responsive">
         <Link to="/products" className="link">

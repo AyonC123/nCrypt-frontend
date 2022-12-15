@@ -10,7 +10,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Products from "./pages/Products";
 import Navbar from "./components/Navbar";
-import NotFound from './pages/NotFound';
+import NotFound from "./pages/NotFound";
 
 function App() {
   const theme = window.localStorage.getItem("KDV_THEME");
@@ -23,17 +23,17 @@ function App() {
 
   return (
     <div className="App">
-    <Helmet>
-      <meta charSet='utf-8'/>
-      <title>Exla</title>
-      <meta name='keywords' content='ecommerce'/>
-      <meta name="description" content="E-commerce" />
-      <meta name="og:title" content="Exla" />
-      <meta name="og:type" content="ecommerce" />
-      <meta name="og:description" content="Exla" />
-      <meta name="og:url" content="" />
-      <meta name="og:image" content="/logo192.png" />
-    </Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Rev</title>
+        <meta name="keywords" content="ecommerce" />
+        <meta name="description" content="E-commerce" />
+        <meta name="og:title" content="Rev" />
+        <meta name="og:type" content="ecommerce" />
+        <meta name="og:description" content="Ecommerce website" />
+        <meta name="og:url" content="https://ncreate.vercel.app" />
+        <meta name="og:image" content="/favicon.ico" />
+      </Helmet>
       <Router>
         <Navbar />
         <Routes>
@@ -43,7 +43,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-          <Route path='/*' element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </Router>
     </div>
