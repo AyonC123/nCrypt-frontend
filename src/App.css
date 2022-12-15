@@ -271,10 +271,23 @@ button[type="submit"]:active {
 }
 
 .showcase-card {
-  background-color: var(--tertiary-background);
   border-radius: 16px;
+  background: var(--tertiary-background);
+  margin: 2.5%;
 }
 
 img {
   border-radius: 10px;
+}
+
+/* NotFound */
+.notfound {
+  color: var(--quadratric-color);
+  font-weight: 600;
+  font-size: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15% 0;
 }
