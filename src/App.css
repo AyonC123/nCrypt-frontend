@@ -209,6 +209,7 @@ form {
   text-indent: 20px;
   border: 2px solid var(--tertiary-background);
   background: var(--secondary-background);
+  color: var(--primary-color);
   border-radius: 2px;
 }
 
