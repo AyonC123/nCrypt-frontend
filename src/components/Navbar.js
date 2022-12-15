@@ -20,7 +20,7 @@ function Navbar() {
   return (
     <nav>
       <Link to="/">
-        <div className="title">Elxa</div>
+        <div className="title">Exla</div>
       </Link>
       <div className="links responsive">
         <Link to="/products" className="link">
@@ -71,14 +71,20 @@ function Navbar() {
               <Link to="/" className="link link-item">
                 Home
               </Link>
-              <Link to="/skills" className="link link-item">
-                Skills
+              <Link to="/products" className="link link-item">
+                Products
               </Link>
-              <Link to="/projects" className="link link-item">
-                Projects
+              <Link to="/about" className="link link-item">
+                About
               </Link>
               <Link to="/contact" className="link link-item">
                 Contact
+              </Link>
+              <Link to="/signup" className="link link-item">
+                Signup
+              </Link>
+              <Link to="/login" className="link link-item">
+                Login
               </Link>
             </div>
           </div>
